@@ -11,6 +11,9 @@ public class InitLogger {
 		ConfigureLog4J.configure();
 		Logger.getLogger(com.espressif.iot.base.net.wifi.WifiAdmin.class)
 				.setLevel(Level.DEBUG);
-		Logger.getLogger(com.afunx.wifirssisender.MainActivity.class);
+		Logger.getLogger(com.afunx.wifirssisender.MainActivity.class).setLevel(
+				Level.DEBUG);
+		Logger.getLogger(com.afunx.wifirssisender.WifiScanService.class)
+				.setLevel(Level.DEBUG);
 	}
 }
